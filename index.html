@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Portfolio of Edrian M. Abiera, 3rd Year IT student, aspiring Web Developer and UI/UX Designer.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Edrian M. Abiera | Web Developer & UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><span></span></div>
+<canvas id="bin" aria-hidden="true"></canvas><div class="orb o1"></div><div class="orb o2"></div>
+
+<header><div class="wrap"><nav class="glass" aria-label="Main">
+  <a href="#home" class="logo">Edrian M. Abiera</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  <ul class="links" id="links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li><li><button class="btn" id="theme" aria-label="Toggle light or dark mode" style="min-height:38px;padding:0 14px">☀</button></li>
+  </ul></nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div>
+    <h1>Edrian M. Abiera</h1>
+    <div class="type" id="type" aria-live="off"></div>
+    <p>I'm a 3rd Year IT student and aspiring Web Developer and UI/UX Designer, building websites that pair clear design with practical, working features.</p>
+    <div class="cta"><a class="btn pri" href="#projects">View My Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+    <div class="social" data-social></div>
+  </div>
+  <div class="frame glass">
+    <!-- Replace assets/images/profile.jpg with your formal photo. Until then a labeled SVG placeholder shows. -->
+    <img id="profile" src="assets/images/profile.jpg" alt="Edrian M. Abiera profile photo" onerror="this.onerror=null;this.src=PH">
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap rv">
+  <h2>About Me</h2><p class="lead">A student developer who enjoys turning ideas into usable websites.</p>
+  <div class="about">
+    <div class="glass"><p>Hello! I'm Edrian M. Abiera, a 3rd Year Information Technology student with a strong interest in Web Development and UI/UX Design.</p>
+    <p>I enjoy creating websites and developing functional systems that combine attractive designs with practical solutions. I continuously explore new technologies, improve my programming abilities, and expand my knowledge of modern web development.</p>
+    <p>My goal is to become a skilled developer who can build innovative, user-friendly, and efficient digital solutions.</p></div>
+    <ul class="glass facts" style="padding:30px"><li><b>Background</b><span>BSIT student at CCDI, Legazpi City</span></li><li><b>Interests</b><span>Web development, interface design, system building</span></li><li><b>Goal</b><span>Grow into a capable Web Developer and UI/UX Designer</span></li><li><b>Right now</b><span>Learning by building small, working systems</span></li></ul>
+  </div></div></section>
+
+<section id="skills"><div class="wrap rv">
+  <h2>Tech Stack and Skills</h2><p class="lead">Technologies I'm learning and working with as a student.</p>
+  <div id="skillbox"></div></div></section>
+
+<section id="projects"><div class="wrap rv">
+  <h2>Featured Projects</h2><p class="lead">Three working prototypes. Open a demo and try it. Data is saved in your browser only.</p>
+  <div class="car"><div class="viewport"><div class="track" id="track"></div></div>
+  <div class="arrows"><button class="glass" id="prev" aria-label="Previous project">←</button><div class="dots" id="dots"></div><button class="glass" id="next" aria-label="Next project">→</button></div></div>
+</div></section>
+
+
+<section id="contact"><div class="wrap rv">
+  <h2>Contact Me</h2><p class="lead">Open to internships, projects, and conversations about web development.</p>
+  <div class="contact">
+    <div class="glass"><h3>Reach me directly</h3><div class="clist" id="clist"></div></div>
+    <form class="glass" id="form" novalidate>
+      <label>Full Name<input name="name" autocomplete="name" required><span class="err"></span></label>
+      <label>Email Address<input name="email" type="email" autocomplete="email" required><span class="err"></span></label>
+      <label>Subject<input name="subject" required><span class="err"></span></label>
+      <label>Message<textarea name="message" rows="5" required></textarea><span class="err"></span></label>
+      <button class="btn pri" type="submit">Send Message</button>
+      <div id="status" role="status"></div>
+    </form>
+  </div></div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><strong style="color:var(--text)">Edrian M. Abiera</strong><br>Aspiring Web Developer and UI/UX Designer.<br>© 2026 Edrian M. Abiera. All Rights Reserved.</div>
+  <nav aria-label="Footer"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <div class="social" data-social></div>
+</div></footer>
+<button id="top" class="glass" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
